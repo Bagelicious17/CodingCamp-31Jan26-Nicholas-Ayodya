@@ -16,6 +16,7 @@ function enterSite() {
     const overlay = document.getElementById('welcome-overlay');
     const mainContent = document.getElementById('main-content');
     const welcomeText = document.getElementById('welcome-text');
+    const footer = document.getElementById('footer-text');
 
     if (visitorName.trim() === "") {
         alert("Please enter your name my guy!");
@@ -24,6 +25,7 @@ function enterSite() {
 
     // Update display names
     welcomeText.innerHTML = `${visitorName}, <br>Welcome to Website`;
+    footer.innerHTML = `© 2024 Built with ❤️ for ${visitorName} • Created By RevoU`;
     
     // Handle Transitions
     overlay.style.opacity = '0';
@@ -83,6 +85,4 @@ document.getElementById('contactForm').addEventListener('submit', (e) => {
     updateBox('displayTanggal', tanggal);
     updateBox('displayJK', jk);
     updateBox('displayPesan', pesan);
-    
-    document.getElementById('welcome-text').innerHTML = `${nama.split(' ')[0]}, <br>Welcome to Website`;
 });

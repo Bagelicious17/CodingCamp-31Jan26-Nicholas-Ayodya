@@ -84,3 +84,8 @@ body {
     width: 2px;
     background: rgba(16, 185, 129, 0.3);
 }
+.ceo{
+    border-radius: 50px; /* Adjust the pixel value for more or less roundness */
+    width: 200px;
+    height: auto; /* Maintain aspect ratio */
+}
